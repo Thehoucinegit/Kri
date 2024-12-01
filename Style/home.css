@@ -1,120 +1,173 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    height: 5rem;
+    background-color: #fff;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+li {
+    list-style: none;
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+}
+
+.navbar .menu {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.navbar .menu li {
+    margin: 0 1rem;
+}
+
+.navbar .menu a {
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.navbar .menu a:hover {
+    color: #1F509A;
+}
+
+.navbar .buttons {
+    display: flex;
+    column-gap: 0.5rem;
+}
+
+.navbar .buttonn {
+    font-size: 1rem;
+    padding: 6px 12px;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #1F509A;
+    border-radius: 20px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.navbar .buttonn:hover {
+    background-color: #1F509A;
+    color: #fff;
+}
+
+
+.logo a{
+    color : #1F509A  ; 
+}
+
+
+
+
+
+
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f3e0bd;
+    background-color: #F4F6FF;
 
 }
 
-#intro,
-#intro button {
-    color: white;
-    font-size: 35px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-#intro {
-    padding-left: 10px;
-    padding-top: 40px;
-    min-height: 450px;
-    background: linear-gradient(rgba(37, 99, 235, 0.1), rgba(37, 99, 235, 0.1)),
-        url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
-    background-size: cover;
-    background-position: center;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-#intro span {
-    display: inline-block;
-    max-width: 600px;
-    margin: 0 auto;
-    padding-bottom: 3px;
-}
-
-#student {
-    background-color: rgba(222, 222, 35, 0.97);
-}
-
-#intro button {
-    background-color: rgba(23, 125, 215, 0.933);
-    border: none;
-    font-size: 20px;
-    padding: 10px 15px;
-    margin-left:0px  ;
-    border-radius: 10px; 
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-}
-
-#intro button:hover {
-    background-color: rgba(233, 227, 162, 0.933);
-    color: #ffffff;
-    transform: scale(1.05);
-}
-
-.cities, #offers {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 15px;
-    padding: 5px 135px 35px;
-    padding-top: 5px;
-    text-align: center;
-    color: #fff;
-}
-
-.cities div {
+#Morocco {
     position: relative;
-    width: 100%;
-    padding-top: 66.66%; /* 150px height based on a 225px width for aspect ratio */
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    color: black;
+    letter-spacing: 0.15em;
 }
 
-.cities div:hover {
-    transform: scale(1.05);
-}
-
-.cities div::before {
+#Morocco:after {
     content: "";
     position: absolute;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.3);
-    transition: background-color 0.3s ease;
+    left: 2%;
+    height: 3px;
+    background-color:#1F509A ;
+    transition: width 0.3s ease, left 0.3s ease;
+    bottom: -.5px;
+    width: 0px;
+}
+#Morocco:hover:after {
+    width: 100%;
+    left: 2%;
 }
 
-.cities div:hover::before {
-    background-color: rgba(0, 0, 0, 0.5);
-}
 
-.cities div::after {
-    content: attr(id);
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    font-size: 1.2em;
-    color: #fff;
+
+.cities , #offers{
+    display: grid ;
+    margin: 5px 15px;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding:5px; 
+    
+}
+.cities div {
+    height : 300px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 16px;
+    display: flex;
+    place-content: center;
+    place-items:center ;
+    padding: 17px;
+    font-size: larger;
+    color: white ; 
+    background-color: rgba(0, 0, 0, 0.1); 
+    background-blend-mode:overlay ;
+    text-shadow: 2px 3px 6px rgba(0, 0, 0, 0.7);
     font-weight: bold;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
-    transform: translateY(10px);
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    opacity: 0;
+}
+.cities div:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.5); 
+    background-blend-mode: overlay; 
+    color:white; 
 }
 
-.cities div:hover::after {
-    transform: translateY(0);
-    opacity: 1;
+@media (min-width:600px) {
+
+ .cities , #offers{
+    padding:40px;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    margin: 5px auto;
+    justify-content: center;
+}  
+
+}
+
+@media(min-width:1024px){
+
+.cities , #offers{
+    
+    grid-template-columns: repeat(auto-fit , minmax(200px ,400px));
+    max-width: 1650px;
+    margin: 15px auto;
+    justify-content: center;
+    
+}
 }
 
 
+
+.cities{
 #Agadir {
     background-image: url('../images/Agadir.jpg');
 }
@@ -154,21 +207,16 @@ body {
 #Salé {
     background-image: url('../images/Sale.jpg');
 }
-
+}
 
 #anywhere , #Popular{
     padding-top: 30px;
-    padding-bottom :px ;
+    padding-bottom :0px ;
     text-align: center;
     font-size: 50px;
 }
-#Morocco{
-    text-decoration: underline solid red;
-}
-#Morocco:hover {
-    color: rgb(13, 8, 145); 
-}
-#more_cities , div.See_more {
+
+.button {
     margin:auto ;
     text-align: center;
     background-color: rgba(23, 125, 215, 0.933);
@@ -176,22 +224,25 @@ body {
     border-radius: 20px;
     padding: 15px;
     margin-bottom: 3px;
-    
-    
+    transition: transform 0.2s ease-in;
 }
 
-#more_cities a{
+
+a  {
     text-decoration: none;
     color: white;
 }
-#Popular{
-    position: relative;
-}
+.button:hover{
+    transform: scale(1.05);
+    background-color: #f4f3e0bd;
+    color:rgba(23, 125, 215, 0.933);
+    border:rgba(23, 125, 215, 0.933) 1px solid ; 
+  }
+
 
 #Popular::after {
-    content: "👀";
-    position: absolute;
-    margin-left: 10px;
+    content: " 👀";
+
 }
 
 
@@ -199,7 +250,7 @@ body {
 #offers div {
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(241, 238, 238, 0.1);
     overflow: hidden;
     transition: transform 0.2s ease;
 }
@@ -216,8 +267,7 @@ body {
 
 #offers p {
     padding: 8px 16px;
-    margin: 0;
-    font-family: Arial, sans-serif;
+    margin: 0 auto;
 }
 
 #offers p:nth-of-type(1) {
@@ -227,7 +277,7 @@ body {
 }
 
 #offers p:nth-of-type(2) {
-    color: #e74c3c;
+    color: #2563eb;
     font-weight: 600;
     font-size: 1.1em;
 }
