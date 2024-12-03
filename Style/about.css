@@ -16,6 +16,7 @@ line-height: 1.6;
 margin: auto;
 padding: 0;
 background-color: #F4F6FF;
+}
 
 li {
     list-style: none;
@@ -54,7 +55,7 @@ header {
 .navbar .logo a {
     font-size: 3rem;
     font-weight: bold;
-    color: black;
+    color: #1F509A;
     transition: 1.5s;
 }
 .navbar .logo a:hover {

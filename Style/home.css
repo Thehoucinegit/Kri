@@ -1,6 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
 *:hover {
     cursor: pointer;
+
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F6FF;
+
 }
 header {
     display: flex;
@@ -13,7 +26,8 @@ header {
     height: 5rem;
     background-color: #fff;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-}
+    min-width: 710px;
+
 li {
     list-style: none;
 }
@@ -74,20 +88,12 @@ li {
 .logo a{
     color : #1F509A  ; 
 }
-
-
-
-
-
-
-body {
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #F4F6FF;
-
 }
+
+
+
+
+
 
 #Morocco {
     position: relative;
@@ -224,7 +230,7 @@ body {
 .button {
     margin:auto ;
     text-align: center;
-    background-color: rgba(23, 125, 215, 0.933);
+    background-color: #1F509A;
     width: 100px;
     border-radius: 20px;
     padding: 15px;
@@ -303,7 +309,7 @@ a  {
 
 
 footer {
-    background-color: #2563eb;
+    background-color: #1F509A;
     padding: 30px 0;
     color: white;
     margin-top: 50px;

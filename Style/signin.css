@@ -28,7 +28,7 @@ li {
 
 .logo a {
     text-decoration: none;
-    color: #000;
+    color: #1F509A;
     font-size: 1em;
     transition: .5s;
 }
@@ -110,6 +110,7 @@ header {
     text-decoration: none;
 }
 
+
 .navbar .button:hover {
     background-color: #1F509A;
     color: #fff;
@@ -134,7 +135,7 @@ header {
     transition: all 0.6s ease-in-out;
 }
 
-.sign-up-container {
+.sign-in-container {
     position: absolute;
     left: 0; 
     width: 50%; 
@@ -240,10 +241,10 @@ input:focus ~ label {
 .overlay-container {
     position: absolute;
     top: 0;
-    right: 0; 
-    width: 50%; 
-    height: 100%; 
-    background: var(--grad-clr2); 
+    right: 0; /* Position it on the right side */
+    width: 50%; /* Fill the right side */
+    height: 100%; /* Match the height of the container */
+    background: var(--grad-clr2); /* Background color */
     transition: transform 0.6s ease-in-out;
     z-index: 9;
     display: flex;
@@ -305,6 +306,7 @@ input:focus ~ label {
 }
 
 
+
 footer {
     background-color: #1F509A;
     position: relative; /* Change from fixed to relative */
@@ -316,6 +318,7 @@ footer {
     text-align: center;
 }
 
+/* Footer Container */
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
